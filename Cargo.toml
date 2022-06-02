@@ -12,11 +12,13 @@ crate-type = ["cdylib"]
 
 [dependencies]
 skyline = { git = "https://github.com/ultimate-research/skyline-rs.git" }
-skyline_smash = { git = "https://github.com/ultimate-research/skyline-smash.git" }
 skyline-web = { git = "https://github.com/skyline-rs/skyline-web" }
 tinytemplate = "1.1.0"
 serde = { version = "1.0", features = ["derive"] }
 percent-encoding = "2.1.0"
+smash-arc = { git = "https://github.com/jam1garner/smash-arc", features = ["smash-runtime", "rust-zstd", "serialize", "dir-listing"] }
+nn-fuse = { git = "https://github.com/blu-dev/nn-fuse" }
+lazy_static = "1.4.0"
 
 [profile.dev]
 panic = "abort"
